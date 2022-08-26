@@ -3,9 +3,9 @@ npm-install-%: ## install specified % npm package
 	git add package.json
 
 transifex_resource = frontend-app-gradebook
-transifex_langs = "ar,fr,es_419,zh_CN,vi"
+transifex_langs = "ar,fr,es_419,zh_CN"
 
-transifex_utils = ./node_modules/@edx/frontend-platform/src/i18n/scripts/transifex-utils.js
+transifex_utils = ./node_modules/.bin/transifex-utils.js
 i18n = ./src/i18n
 transifex_input = $(i18n)/transifex_input.json
 tx_url1 = https://www.transifex.com/api/2/project/edx-platform/resource/$(transifex_resource)/translation/en/strings/
